@@ -36,12 +36,12 @@ def create_dict(alist):
 
 
 if __name__ == "__main__":
-    l = read('C:\\Users\\Panos\Documents\\Τεχνολογία Λογισμικού\\SoftwareEngineeringSep2018.pdf')
+    l = read('/path/to/pdf')
     li = _tokens(l)
     _dict = create_dict(li)
     
     # to JSON
-    write_json('./ranksSWE18.json', _dict)
+    write_json('/path/to/file/creation', _dict)
     # Serialize
     write_pickle('./data', _dict)
 
