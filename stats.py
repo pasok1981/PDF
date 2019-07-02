@@ -27,4 +27,4 @@ def get_stats(_filename):
     print("Pass rate: {:.2f}".format((sum_p/sum(groups))*100.0))
     
 if __name__ == "__main__":
-    get_stats('./ranksSWE19.json')
+    get_stats('/path/to/json')
